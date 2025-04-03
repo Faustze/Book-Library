@@ -5,8 +5,14 @@
 2. Ensure Python 3.8+ is installed
 
 ## 🔧 Installation
-### Install dependencies
 ```bash
+# Create virtual environment
+python -m venv venv
+# Activate environment (Linux/macOS)
+source venv/bin/activate
+# Activate environment (Windows)
+.\venv\Scripts\activate
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -22,10 +28,8 @@ FLASK_ENV=development
 ```bash
 # Initialize migrations (run once)
 flask db init
-
 # Create migration
 flask db migrate -m "Initial migration"
-
 # Apply migrations
 flask db upgrade
 ```
